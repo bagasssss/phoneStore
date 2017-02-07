@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="phoneStore">
+<head>
+	<title>Phone Store</title>
+	<meta charset="utf-8" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Services/services.js"></script>
+    <script src="Directives/directives.js"></script>
+
+    <script>
+    	angular.module("phoneStore", ["store.services","store.directives"])
+    </script>
+</head>
+<body>
+	
+			<store-directive></store-directive>
+	
+</body>
+</html>

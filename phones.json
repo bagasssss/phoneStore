@@ -1,0 +1,16 @@
+[
+	{
+		"name":"Apple iPhone 5S 16GB (Space Gray)",
+	 	"description": ["40inch Retina Display", "A7 chip with m7 motion coprocessor","Touch ID fingerprint sensors", "New 8MP iSoght camera with True Tone flash", "and 1080p HD video recording"],
+	 	"price": 680.99,
+	 	"left": 9,
+	 	"image": "/Images/Apple iPhone 5S 16Gb Space Gray.jpg"
+	 },
+	 {
+		"name":"Apple iPhone 5S 16GB (Silver)",
+	 	"description": ["40inch Retina Display", "A7 chip with m7 motion coprocessor","Touch ID fingerprint sensors", "New 8MP iSoght camera with True Tone flash", "and 1080p HD video recording"],
+	 	"price": 680.99,
+	 	"left": 3,
+	 	"image": "/Images/Apple iPhone 5S 16Gb Silver.jpg"
+	 }
+]	

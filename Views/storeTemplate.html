@@ -1,0 +1,95 @@
+
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="collapse navbar-collapse">
+
+			<ul class="nav navbar-nav">
+		        <li class="dropdown">
+		          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+		          	<ul class="dropdown-menu">
+			            <li><a href="#">Action</a></li>
+			            <li><a href="#">Another action</a></li>
+			            <li><a href="#">Something else here</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">Separated link</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">One more separated link</a></li>
+		          	</ul>
+	        	</li>
+      		</ul>
+
+
+
+	      	<ul class="nav navbar-nav navbar-right">
+		      	<li class="dropdown">
+		      		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cart <span class="caret"></span></a>
+		      		<ul class="dropdown-menu cart">
+		      			
+		      			<li ng-repeat="cart in ctrl.cart track by $index" class="cart-phone">
+			      			<div class="panel-body">
+			      				<div class="col-md-2">
+			      					<!-- image -->
+			      					<img ng-src="{{cart.image}}" height="50" >
+			      				</div>
+			      				<div class="col-md-10">
+			      					<!-- NAME + PRICE -->
+			      					<p>
+			      						{{cart.name}}
+			      					</p>
+			      					<p>
+			      						<b>{{cart.price}}</b> +$12.99 shipping
+			      					</p>
+			      				</div>
+			      			</div>
+		      			</li>
+		      			<li role="separator" class="divider"></li>
+		      			<li>
+		      				<span>Total cost: <b>{{ctrl.totalCost}}</b></span>
+		      			</li>
+
+		      		</ul>
+		      	</li>
+	      	</ul>
+
+	      	<form class="navbar-form navbar-right">
+		        <div class="form-group">
+		          	<input type="text" class="form-control" placeholder="Search">
+		        </div>
+		       <!--  <button type="submit" class="btn btn-default">Submit</button> -->
+	      	</form>
+
+		</div>
+	</div>
+</nav>
+
+<div class="container">
+	<div class="panel panel-body">
+		<div class="col-md-9 phoneDescription" ng-repeat="phone in ctrl.phones">
+			<div class="col-md-12 info-block right-block">
+				<!-- only ..... left -->
+				<span> Only {{phone.left}} left in stock</span>
+			</div>
+			<div class="col-md-12">
+				<!-- IMAGE + NAME + DESCRIPTION -->
+				<div class="col-md-3">
+					<!-- IMAGE -->
+					<img ng-src="{{phone.image}}" height="100" >
+				</div>
+				<div class="col-md-9">
+					<!-- DESCRIPTION -->
+					<li ng-repeat="d in phone.description">
+						{{d}}
+					</li>
+				</div>
+			</div>
+			<div class="col-md-12 info-block">
+				<!-- PRICE -->
+				<span>Price: <b>{{phone.price}}</b> + $12.99 shipping</span>
+			</div>
+			<div class="col-md-12 info-block right-block">
+				<!-- BUTTON -->
+				<button class="btn btn-warning" ng-click="ctrl.addToCart(phone)">  Add to cart      </button>
+			</div>
+		</div>
+	</div>
+</div>

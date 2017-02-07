@@ -1,0 +1,21 @@
+﻿.phoneDescription {
+    border: 2px solid #ccc;
+    margin: 5px;
+}
+
+.info-block {
+    margin: 10px;
+}
+
+.cart-phone {
+    margin: 10px;
+}
+
+.cart {
+    width: 400px;
+}
+
+b {
+    color:red;
+}
+
