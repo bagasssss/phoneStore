@@ -14,6 +14,8 @@
 					vm.phones = [];
 					vm.cart = [];
 					vm.totalCost =0;
+					vm.shippingCost = 12.99;
+					vm.manufacturer = "";
 
 					activate();
 
@@ -42,6 +44,12 @@
 							total=total+vm.cart[i].price;
 						};
 						vm.totalCost = Math.round((total) * 100) / 100;
+					};
+
+					vm.changeManufacturer = function(manufacturer) {
+						vm.manufacturer = manufacturer;
+						console.log("man changed");
+						console.log(vm.manufacturer);
 					};
 
 
