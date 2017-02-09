@@ -9,6 +9,7 @@
 
 .cart-phone {
     margin: 10px;
+    background-color: white;
 }
 
 .cart {
@@ -17,5 +18,9 @@
 
 b {
     color:red;
+}
+
+.price-aria {
+    background-color: white;
 }
 

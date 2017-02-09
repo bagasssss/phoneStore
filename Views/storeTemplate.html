@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     
     <div class="navbar-header">
@@ -21,7 +21,7 @@
 			    <li><a ng-click="ctrl.changeManufacturer('apple')">Apple</a></li>
 			    <li><a ng-click="ctrl.changeManufacturer('samsung')">Samsung</a></li>
 			    <li role="separator" class="divider"></li>
-			    <li><a ng-click="ctrl.changeManufacturer('')">All phones</a></li>
+			    <li><a ng-click="ctrl.changeManufacturer('')">All goods</a></li>
           	</ul>
         	</li>
       	</ul>
@@ -34,7 +34,7 @@
 
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cart <span class="caret"></span></a>
+          <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ctrl.goodsInCart}} Cart <span class="caret"></span></a>
 		    <ul class="dropdown-menu cart">	
 		      	<li ng-repeat="cart in ctrl.cart track by $index" class="cart-phone">
 			      			<div class="panel-body">
@@ -54,7 +54,7 @@
 			      			</div>
 		      			</li>
 		      	<li role="separator" class="divider"></li>
-		      	<li>
+		      	<li class="price-aria">
 		      		<span>Total cost: <b>{{ctrl.totalCost}}</b> + {{ctrl.shippingCost}} shipping</span>
 		      	</li>
 		    </ul>

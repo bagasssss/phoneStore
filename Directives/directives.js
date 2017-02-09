@@ -16,6 +16,7 @@
 					vm.totalCost =0;
 					vm.shippingCost = 12.99;
 					vm.manufacturer = "";
+					vm.goodsInCart =0;
 
 					activate();
 
@@ -31,11 +32,20 @@
 						})
 					};
 
+					function changeCartLength() {
+						if(vm.cart.length > 0) {
+							var v = vm.cart.length;
+							vm.goodsInCart = v;
+						};
+						
+					};
+
 					vm.addToCart = function(phone) {
 						vm.cart.push(phone);
 						console.log("added to cart: ");
 						console.log(phone);
 						calculateTotal();
+						changeCartLength();
 					};
 
 					function calculateTotal() {
