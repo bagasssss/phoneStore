@@ -11,7 +11,6 @@
 						method: "GET",
 						url: phonesPath
 					}).success(function(response) {
-						console.log("data in factory")
 						return response.data;
 					})
 				}

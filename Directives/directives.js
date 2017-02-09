@@ -27,23 +27,15 @@
 					function getDataFromFile(){
 						storeService.getData().success(function(data){
 							vm.phones = data;
-							console.log("data in controller");
-							console.log(data);
 						})
 					};
 
 					function changeCartLength() {
-						if(vm.cart.length > 0) {
-							var v = vm.cart.length;
-							vm.goodsInCart = v;
-						};
-						
+						vm.goodsInCart = vm.cart.length;
 					};
 
 					vm.addToCart = function(phone) {
 						vm.cart.push(phone);
-						console.log("added to cart: ");
-						console.log(phone);
 						calculateTotal();
 						changeCartLength();
 					};
@@ -58,8 +50,6 @@
 
 					vm.changeManufacturer = function(manufacturer) {
 						vm.manufacturer = manufacturer;
-						console.log("man changed");
-						console.log(vm.manufacturer);
 					};
 
 
