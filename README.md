@@ -8,7 +8,7 @@
 - category menu
 - search option
 - cart in dropdown menu
-- navbar change when screep is decrease
+- navbar change for narrow screen
 
 ### Technologies
 - Angular 1
