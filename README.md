@@ -10,7 +10,7 @@
 - cart in dropdown menu
 - navbar change when screep is decrease
 
-### technologies
+### Technologies
 - Angular 1
 - Bootstrap
 
